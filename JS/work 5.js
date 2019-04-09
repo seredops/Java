@@ -91,7 +91,7 @@ if (nameA > nameB)
   return 1
 return 0 // Никакой сортировки
 })*/
-//сделал по этому примеру 
+//сделал по этому примеру
 let books = [
     { author: 'Толстой', title: 'Война и мир'},
     { author: 'Гончаров', title: 'Обломов'},
@@ -106,6 +106,21 @@ books.sort((prev, next) => {
 console.log(books);
 
 
+//#3
 
-
-
+let dayInWeek = {
+    1: 'monday',
+    2: 'tuesday',
+    3: 'wednesday',
+    4: 'thursday',
+    5: 'friday',
+    6: 'saturday',
+    7: 'Sunday',
+};
+function DayName(daysss) {
+    let date = new Date();
+    let days = date.getDay();
+    return (daysss[days]);
+}
+console.log(DayName(dayInWeek));
+alert(DayName(dayInWeek));
