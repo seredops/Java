@@ -1,0 +1,26 @@
+#goods{
+    align-items: center;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+}
+
+.table{
+    align-content: center;
+    border: solid 1px red;
+    margin: auto;
+    width: 400px;
+}
+ td{
+     border: solid 1px darkblue;
+     text-align: center;
+ }
