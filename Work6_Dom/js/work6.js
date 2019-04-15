@@ -91,6 +91,44 @@ let articles = [
         author: "Peter"
     }
 ];
+
+let allTables = {
+    init: function (arr_data) {
+        this.data = arr_data;
+        this.table = document.createElement('table');
+        this.table.setAttribute('border','1');
+
+    },
+    Caption: function () {
+        let captionRow = this.table.insertRow();
+        for (key in this.data[0]){
+            let cell = captionRow.insertCell();
+            cell.innerText = key.toUpperCase();
+            cell.classList.add('cell');
+        }
+    },
+    InfoContent: function () {
+        for (let i = 0; i<this.data.length; i++) {
+            let row = this.table.insertRow();
+            for (let key in this.data[i]) {
+                let cell = row.insertCell();
+                cell.innerText = this.data[i][key];
+                cell.classList.add('info');
+            }
+        }
+    },
+    Tablet: function (arr_data) {
+        this.init(arr_data);
+        this.Caption();
+        this.InfoContent();
+        return this.table;
+    }
+};
+let tables = document.getElementById('table');
+tables.appendChild(allTables.Tablet(articles));
+
+
+
 /*
 
 let allTables = document.getElementById('table');
@@ -108,6 +146,7 @@ cell1.innerText = 'cell1';
 cell2.innerText = 'cell2';*/
 
 
+/*
 let table = document.createElement('table');
 table.setAttribute('class','table');
 //console.log(table);
@@ -144,6 +183,7 @@ for (key in articles[0]) {
         document.getElementById('table').appendChild(table);
 
 }
+*/
 
 
 
