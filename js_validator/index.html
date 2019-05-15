@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validator </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form__wrapper">
+                <form id="register" action="#">
+                    <h1>Регистрация</h1>
+                    <div class="fields">
+                        <label for="login">Ваш логин:</label>
+                        <input type="text" id="login" value="" placeholder="name">
+                        <span class="dot">*</span>
+                    </div>
+                    <div class="fields">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="text" id="email" value="" placeholder="youmail@domain.ru">
+                        <span class="dot">*</span>
+                    </div>
+                    <div class="fields">
+                        <label for="pass1">Пароль:</label>
+                        <input type="password" id="pass1" value="" >
+                        <span class="dot">*</span>
+                    </div>
+                    <div class="fields">
+                        <label for="pass2">Пароль еще раз:</label>
+                        <input type="password" id="pass2" value="" >
+                        <span class="dot">*</span>
+                    </div>
+
+
+                    <button type="submit" name="button" id="send">Отправить</button>
+                </form>
+    </div>
+</div>
+<script src="js/valid.js"></script>
+
+</body>
+</html>
