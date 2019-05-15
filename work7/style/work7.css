@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    border: solid 1px red;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: orange;
+}
+
+.present{
+    background-color: #1e7e34;
+}
+
+.offline{
+    background-color: black;
+}
+.cell{
+    border: solid 1px red;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.container{
+    max-width: 400px;
+}
+
+#table{
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 50px;
+    background-color: #cbd3da;
+    color: white;
+    text-align: center;
+}
